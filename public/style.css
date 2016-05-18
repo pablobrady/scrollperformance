@@ -60,7 +60,7 @@ i.fa {
 /*animation element*/
 
 .animation-element {
-  opacity: 0;
+  opacity: 1; /* 0 */
   position: relative;
 }
 /*animation element sliding left*/
@@ -105,7 +105,7 @@ html.js.supports.csstransforms3d .animation-element.slide-left {
   -ms-transform: translate(-100px, 0px);
   transform: translate3d(-100px, 0px, 0px);
 
-background-color: orange;
+background-color: yellow;
 }
 
 html.js.supports.csstransforms3d .animation-element.slide-left.in-view {
@@ -127,6 +127,7 @@ background-color: red;
 .animation-element.slide-left.testimonial {
   float: left;
   width: 47%;
+min-height: 375px;
   margin: 0% 1.5% 3% 1.5%;
 /*  background: #F5F5F5; */
   padding: 15px;
@@ -199,6 +200,7 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   .animation-element.slide-left.testimonial:nth-of-type(even){
     width: 100%;
     margin: 0px 0px 20px 0px;
+background-color: green;
   }
   .animation-element.slide-left.testimonial .right,
   .animation-element.slide-left.testimonial .left,
