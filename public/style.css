@@ -67,7 +67,7 @@ i.fa {
 
 
 /*
-  Moderniz NO-csstransform3d
+  +++++ Moderniz NO-csstransform3d +++++
 */
 html.js.supports.no-csstransforms3d .animation-element.slide-left {
   opacity: 0;
@@ -77,6 +77,7 @@ html.js.supports.no-csstransforms3d .animation-element.slide-left {
   transition: all 500ms linear;
 
   left: -100px;
+background-color: purple;
 }
 
 html.js.supports.no-csstransforms3d .animation-element.slide-left.in-view {
@@ -89,7 +90,7 @@ html.js.supports.no-csstransforms3d .animation-element.slide-left.in-view {
 
 
 /*
-  Moderniz no-csstransform3d
+  ----- Moderniz csstransform3d -----
 */
 html.js.supports.csstransforms3d .animation-element.slide-left {
   opacity: 0;
@@ -102,6 +103,8 @@ html.js.supports.csstransforms3d .animation-element.slide-left {
   -o-transform: translate(-100px, 0px);
   -ms-transform: translate(-100px, 0px);
   transform: translate3d(-100px, 0px, 0px);
+
+background-color: orange;
 }
 
 html.js.supports.csstransforms3d .animation-element.slide-left.in-view {
