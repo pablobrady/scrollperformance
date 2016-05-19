@@ -29,4 +29,6 @@ $window.trigger('scroll');
 // TEST
 if (Modernizr.csstransforms3d) {
   console.log("Modernizr.csstransforms3d SUPPORTED!");
+} else {
+  console.log("Modernizr.csstransforms3d NOT supported!");
 }
