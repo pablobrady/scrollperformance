@@ -44,7 +44,7 @@ body {
 
 
 
-/* ---- CPU VERSIONS ---- */
+/* ---- CPU VERSIONS w/ .pushmenu-push ---- */
 .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
   left: -240px;
 }
@@ -54,9 +54,9 @@ body {
 }
 
 .pushmenu-push { /* PUSH-MENU menu, modify BODY */
-  overflow-x: hidden;
+/*  overflow-x: hidden;
   position: relative;
- left: 0;
+ left: 0;*/
 }
 
 .pushmenu-push-toright {
