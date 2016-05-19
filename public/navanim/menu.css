@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+
+.pushmenu { /*this is the mobile PUSH-MENU (slide-out menu) nav*/
+  background: #3c3933; // PUSH-MENU Menu BG
+  font-family: Arial, Helvetics, sans-serif;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position:fixed;
+  text-align: center;
+}
+
+.pushmenu a:first-of-type { /* PUSH-MENU, HOME */
+  color: gold;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin: 0;
+  height: 16px;
+}
+
+.pushmenu a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-top: 1px solid #56544e;
+  border-bottom: 1px solid #312e2a;
+  padding: 14px;
+}
+
+.pushmenu a:hover {
+  background:#cc0003; /* BOLD RED! */
+}
+
+.pushmenu a:active {
+  background: green;
+  color: #fff;
+}
+
+
+
+/* ==== GPU VERSIONS ====*/
+.pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
+  transform: translate3d(-240px, 0, 0);
+/*  left: -240px; */
+}
+
+.XXXXXXpushmenu-left.pushmenu-open { /* WTF?  PUSH-MENU menu, VISIBLE/OPEN */
+/*  transform: translate3d(0px, 0, 0); */
+/*  left: 0; */
+}
+
+.pushmenu-push { /* PUSH-MENU menu, modify BODY */
+  overflow-x: hidden;
+  position: relative;
+  transform: translate3d(0px, 0, 0);
+/* left: 0; */
+}
+
+.pushmenu-push-toright {
+  transform: translate3d(240px, 0, 0);
+/* left: 240px; */
+}
+
+
+
+/*Transition*/
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;  /* back to IE 9 */
+  transition: transform 0.4s ease-in;
+}
+
+
+
+/*nav-list.active {
+  background-position: -33px top;
+}*/
+
+section.content {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+.desktopHeaderDiv {
+    background: pink;
+    cursor: pointer;
+    height: 150px;
+    width: 100%;
+}
+
+@media screen and (max-width:750px) { /* PHONE, IN PORTRAIT and LANDSCAPE */
+  .desktopHeaderDiv { display: none; }
+
+  #nav_list {
+  /* ANCHOR THIS BUTTON TO TOP??? */
+    background: blue url('hamburger.png') no-repeat left top;
+    cursor: pointer;
+    height: 27px;
+    width: 33px;
+    text-indent: -99999em;
+  }
+
+
+  .buttonset { /* PUSH-MENU STATIC HEADER */
+    /* background: #00A287; Green/Blue header */
+    background: gray;
+    background-size: cover;
+    height: 16px;
+    padding: 10px 20px 20px;
+    width: 100%;
+    padding-bottom: 25%;
+  }
+}
+
+
+
+
+

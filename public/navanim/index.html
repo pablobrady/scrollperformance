@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GPU Nav Menu Animation Practice</title>
+<!-- http://jsfiddle.net/jm36a13s/ -->
+
+<link rel="stylesheet" type="text/css" href="menu.css">
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+</head>
+<body class="pushmenu-push">
+	<nav class="pushmenu pushmenu-left">
+		<a href="#">HOME</a>
+		<a href="#">BIOS</a>
+		<a href="#">SHOWS</a>
+		<a href="#">MEDIA</a>
+		<a href="#">SET LIST</a>
+		<a href="#">CONTACT</a>
+	</nav>
+
+	<div class="container">
+		<div class="main">
+		<section class="buttonset">
+			<div id="nav_list">
+				<div class="desktopHeaderDiv">DESKTOP HEADER GOES HERE</div>
+			</div>
+		</section>
+
+		<section class="content">
+			Slideout Navigation Demo<br>
+			<p>
+				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br>				BODY CONTENT<br><br><br>...FOOTER...
+
+			</p>
+		</section><!-- End Content -->
+	</div><!-- End Main -->
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		// $menuLeft = $('.pushmenu-left');
+		$nav_list = $('#nav_list');
+
+		$nav_list.click(function() {
+			$(this).toggleClass('active');
+			$('.pushmenu-push').toggleClass('pushmenu-push-toright');
+				// BODY.pushmenu-push <-- move right!
+
+			// $menuLeft.toggleClass('pushmenu-open'); // REMOVE!!!
+		});
+	});
+
+</script>
+
+
+</div><!-- End Container -->
+</body>
+</html>
