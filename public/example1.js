@@ -1,3 +1,5 @@
+console.log("example1.js arrival...");
+
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 
