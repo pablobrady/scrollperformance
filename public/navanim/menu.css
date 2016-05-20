@@ -76,7 +76,6 @@ BODY.no-csstransforms3d { /* PUSH-MENU menu, modify BODY */
 .no-csstransforms3d .pushmenu, .no-csstransforms3d .pushmenu-push {
   -webkit-transition: left 0.4s ease;
   transition: left 0.4s ease-in;
-  left: 0;
 }
 
 .no-csstransforms3d {
@@ -93,12 +92,6 @@ BODY.no-csstransforms3d { /* PUSH-MENU menu, modify BODY */
   -webkit-transform: translate3d(-240px, 0, 0);
   transform: translate3d(-240px, 0, 0);
   left: 0;
-}
-
-.csstransforms3d .pushmenu-open-toggle { /* WTF?  PUSH-MENU menu, VISIBLE/OPEN */
-  -webkit-transform: translate3d(0px, 0, 0);
-  transform: translate3d(0px, 0, 0);
-/*  left: 0; */
 }
 
 BODY.csstransforms3d { /* PUSH-MENU menu, modify BODY */
@@ -121,7 +114,6 @@ BODY.csstransforms3d { /* PUSH-MENU menu, modify BODY */
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease-in;
   transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
-  left: 0;
 }
 
 
