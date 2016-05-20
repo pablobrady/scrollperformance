@@ -62,7 +62,7 @@ body {
   left: 0;
 }
 
-.no-csstransforms3d .pushmenu-push { /* PUSH-MENU menu, modify BODY */
+BODY { /* PUSH-MENU menu, modify BODY */
   overflow-x: hidden;
   position: relative;
   left: 0;
@@ -100,11 +100,11 @@ body {
 /*  left: 0; */
 }
 
-.csstransforms3d .pushmenu-push { /* PUSH-MENU menu, modify BODY */
+BODY { /* PUSH-MENU menu, modify BODY */
   overflow-x: hidden;
   position: relative;
-  transform: translate3d(0px, 0, 0);
-/* left: 0; */
+  /* transform: translate3d(0px, 0, 0); */
+  left: 0;
 }
 
 .csstransforms3d .pushmenu-push-toright {
