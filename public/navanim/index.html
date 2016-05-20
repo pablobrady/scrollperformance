@@ -51,9 +51,10 @@
 			console.log("CLICK NAV");
 			$(this).toggleClass('active');
 			$('.pushmenu-push').toggleClass('pushmenu-push-toright');
-				// BODY.pushmenu-push <-- move right!
+				// BODY.pushmenu-push --> moves right! (slightly off view)
 
 			$menuLeft.toggleClass('.pushmenu-open-toggle');
+				// nav.pushmenu-toggle --> moves right! (onto view)
 		});
 	});
 
