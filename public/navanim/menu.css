@@ -62,7 +62,7 @@ body {
   left: 0;
 }
 
-BODY { /* PUSH-MENU menu, modify BODY */
+BODY.no-csstransforms3d { /* PUSH-MENU menu, modify BODY */
   overflow-x: hidden;
   position: relative;
   left: 0;
@@ -100,7 +100,7 @@ BODY { /* PUSH-MENU menu, modify BODY */
 /*  left: 0; */
 }
 
-BODY { /* PUSH-MENU menu, modify BODY */
+BODY.csstransforms3d { /* PUSH-MENU menu, modify BODY */
   overflow-x: hidden;
   position: relative;
   transform: translate3d(0px, 0, 0);
