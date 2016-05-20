@@ -51,19 +51,18 @@ body {
   color: #fff;
 }
 
-
+/* --- IE WORKAROUND --- */
 
 
 /* ==== GPU VERSIONS ====*/
 .csstransforms3d .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
   -webkit-transform: translate3d(-240px, 0, 0);
   transform: translate3d(-240px, 0, 0);
-  left: 0;
 }
 
 .csstransforms3d .pushmenu-open-toggle { /* PUSH-MENU moves to origin (now visible) */
-  -webkit-transform: translate3d(0px, 0, 0);
-  transform: translate3d(0px, 0, 0);
+  -webkit-transform: translate3d(-240px, 0, 0);
+  transform: translate3d(-240px, 0, 0);
 /*  left: 0; */
 }
 
