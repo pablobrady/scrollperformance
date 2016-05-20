@@ -13,7 +13,7 @@ body {
 
 .pushmenu { /*this is the mobile PUSH-MENU (slide-out menu) nav*/
   background: #3c3933; /* PUSH-MENU Menu BG */
-  font-family: Arial, Helvetics, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   width: 240px;
   height: 100%;
   top: 0;
@@ -74,9 +74,7 @@ BODY { /* PUSH-MENU menu, modify BODY */
 
 /*Transition*/
 .no-csstransforms3d .pushmenu, .no-csstransforms3d .pushmenu-push {
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
+  -webkit-transition: left 0.4s ease;
   transition: left 0.4s ease-in;
 }
 
@@ -91,11 +89,13 @@ BODY { /* PUSH-MENU menu, modify BODY */
 
 /* ==== GPU VERSIONS ====*/
 .csstransforms3d .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
+  -webkit-transform: translate3d(-240px, 0, 0);
   transform: translate3d(-240px, 0, 0);
 /*  left: -240px; */
 }
 
 .csstransforms3d .pushmenu-open-toggle { /* WTF?  PUSH-MENU menu, VISIBLE/OPEN */
+  -webkit-transform: translate3d(0px, 0, 0);
   transform: translate3d(0px, 0, 0);
 /*  left: 0; */
 }
@@ -117,9 +117,9 @@ BODY { /* PUSH-MENU menu, modify BODY */
 /*Transition*/
 .csstransforms3d .pushmenu, .csstransforms3d .pushmenu-push {
   -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
 
 
