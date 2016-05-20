@@ -54,26 +54,26 @@ body {
 
 
 /* ==== CPU LEFT VERSIONS ====*/
-.no-csstransforms3d.pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
+.no-csstransforms3d .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
   left: -240px;
 }
 
-.no-csstransforms3d.pushmenu-open-toggle {
+.no-csstransforms3d .pushmenu-open-toggle {
   left: 0;
 }
 
-.no-csstransforms3d.pushmenu-push { /* PUSH-MENU menu, modify BODY */
+.no-csstransforms3d .pushmenu-push { /* PUSH-MENU menu, modify BODY */
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-.no-csstransforms3d.pushmenu-push-toright {
+.no-csstransforms3d .pushmenu-push-toright {
   left: 240px;
 }
 
 /*Transition*/
-.no-csstransforms3d.pushmenu, .no-csstransforms3d.pushmenu-push {
+.no-csstransforms3d .pushmenu, .no-csstransforms3d .pushmenu-push {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -88,25 +88,26 @@ body {
 
 
 
+
 /* ==== GPU VERSIONS ====*/
-.csstransforms3d.pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
+.csstransforms3d .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
   transform: translate3d(-240px, 0, 0);
 /*  left: -240px; */
 }
 
-.csstransforms3d.pushmenu-left.pushmenu-open { /* WTF?  PUSH-MENU menu, VISIBLE/OPEN */
+.csstransforms3d .pushmenu-open-toggle { /* WTF?  PUSH-MENU menu, VISIBLE/OPEN */
   transform: translate3d(0px, 0, 0);
 /*  left: 0; */
 }
 
-.csstransforms3d.pushmenu-push { /* PUSH-MENU menu, modify BODY */
+.csstransforms3d .pushmenu-push { /* PUSH-MENU menu, modify BODY */
   overflow-x: hidden;
   position: relative;
   transform: translate3d(0px, 0, 0);
 /* left: 0; */
 }
 
-.csstransforms3d.pushmenu-push-toright {
+.csstransforms3d .pushmenu-push-toright {
   transform: translate3d(240px, 0, 0);
 /* left: 240px; */
 }
@@ -114,7 +115,7 @@ body {
 
 
 /*Transition*/
-.csstransforms3d.pushmenu, .csstransforms3d.pushmenu-push {
+.csstransforms3d .pushmenu, .csstransforms3d .pushmenu-push {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
