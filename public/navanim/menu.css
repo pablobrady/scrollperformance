@@ -53,45 +53,18 @@ body {
 
 
 
-/* ==== CPU LEFT VERSIONS ====*/
-.no-csstransforms3d .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
-  left: -240px;
-}
-
-.no-csstransforms3d .pushmenu-open-toggle {
-  left: 0;
-}
-
-BODY.no-csstransforms3d { /* PUSH-MENU menu, modify BODY */
-  overflow-x: hidden;
-  position: relative;
-  left: 0;
-}
-
-.no-csstransforms3d .pushmenu-push-toright {
-  left: 240px;
-}
-
-/*Transition*/
-.no-csstransforms3d .pushmenu, .no-csstransforms3d .pushmenu-push {
-  -webkit-transition: left 0.4s ease;
-  transition: left 0.4s ease-in;
-}
-
-.no-csstransforms3d {
-  display:block;
-  background-color: lightgreen;
-  color:blue;
-}
-
-
-
 
 /* ==== GPU VERSIONS ====*/
 .csstransforms3d .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
   -webkit-transform: translate3d(-240px, 0, 0);
   transform: translate3d(-240px, 0, 0);
   left: 0;
+}
+
+.csstransforms3d .pushmenu-open-toggle { /* PUSH-MENU moves to origin (now visible) */
+  -webkit-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+/*  left: 0; */
 }
 
 BODY.csstransforms3d { /* PUSH-MENU menu, modify BODY */
