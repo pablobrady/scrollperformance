@@ -91,7 +91,7 @@ BODY { /* PUSH-MENU menu, modify BODY */
 .csstransforms3d .pushmenu-left { /* PUSH-MENU menu position (default/hidden to the left of BODY) */
   -webkit-transform: translate3d(-240px, 0, 0);
   transform: translate3d(-240px, 0, 0);
-/*  left: -240px; */
+  left: 0;
 }
 
 .csstransforms3d .pushmenu-open-toggle { /* WTF?  PUSH-MENU menu, VISIBLE/OPEN */
