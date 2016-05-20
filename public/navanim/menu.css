@@ -76,6 +76,7 @@ BODY.no-csstransforms3d { /* PUSH-MENU menu, modify BODY */
 .no-csstransforms3d .pushmenu, .no-csstransforms3d .pushmenu-push {
   -webkit-transition: left 0.4s ease;
   transition: left 0.4s ease-in;
+  left: 0;
 }
 
 .no-csstransforms3d {
@@ -120,6 +121,7 @@ BODY.csstransforms3d { /* PUSH-MENU menu, modify BODY */
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease-in;
   transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  left: 0;
 }
 
 
