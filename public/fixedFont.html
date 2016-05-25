@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scaling Layout and Fonts</title>
+
+	<style>
+		html {
+		  box-sizing: border-box;
+		}
+		*, *:before, *:after {
+		  box-sizing: inherit;
+		}
+
+		.clearfix {
+		  overflow: auto;
+		  zoom: 1;
+		}
+
+		/* FONT DEFAULTS */
+		html {
+			font-size: 16px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			color: #352a25;
+			font-family: Georgia, serif;
+			font-size: 62.5%; /* 1em = 10px */
+		}
+
+		strong{
+			color: red;
+		}
+
+		/* ANCHOR TAGS */
+		a:link, a:visited, a:active {
+			color: lightGreen;
+		}
+		a:hover {
+			color: white;
+		}
+
+		/* PAGE LAYOUT */
+		.siteWrapper {
+			width: 90%;
+			margin: 0 auto;
+			background-color: yellow;
+		}
+		.sidebar {
+			float:left;
+			text-align: center;
+			width: 30%;
+			background-color: purple;
+			box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.3);
+
+			font-size: 2em;   /* aka 20px */
+			/* font-size: 2.5vw;*/ /* x percent of the View Width */
+		}
+		.contentArea {
+			width: 60%;
+			margin: 0 5%;
+			padding: 3.389830%;
+			color: #000;
+			float:left;
+			text-align: center;
+			background-color: orange;
+			box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+
+			font-size: 1.5em; /* aka 15px */
+			/* font-size: 2.5vw; */ /* x percent of the View Width */
+		}
+		.contentArea .aside {
+			font-weight: bold;
+			font-style: italic;
+		}
+		ul {
+			width: 100%;
+			list-style-type: none;
+			padding: 0;
+		}
+		ul li {
+			color: white;
+		}
+		.pageFooter {
+			width: 100%;
+			display: inline-block;
+			background-color: #ff0033;
+			text-align: center;
+
+			font-size: 1em; /* aka 10px */
+			/* font-size: 2.5vw;*/ /* x percent of the View Width */
+		}
+	</style>
+</head>
+<body>
+
+<div class="siteWrapper">
+
+	<sidebar class="sidebar">
+		<header>[ MENU ]</header>
+		<ul>
+			<li><a href="fixedFont.html">Fixed Font</a></li>
+			<li><a href="relativeFont.html">Relative Font</a></li>
+		</ul>
+		<footer></footer>
+	</sidebar>
+
+	<section class="contentArea">
+		<aside><strong>Resize the Browser Window!!!</strong></aside>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus purus, imperdiet ut magna vitae, aliquet sodales eros. Aenean nec condimentum nisl, ac viverra erat. Phasellus sed dolor convallis, venenatis velit vel, tincidunt justo.
+		</p>
+	</section>
+
+	<footer class="pageFooter">
+		Copyright 20XX Lorem ipsum dolor sit amet
+	</footer>
+</div>
+
+</body>
+</html>
